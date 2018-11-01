@@ -143,4 +143,14 @@ dataset.padded_batch(4,
 
 )
 
+dataset = dataset.prefetch(4) #prefetch 4 batches
+
+iterator  = datset.make_intializable_iterator()
+
+sess =tf.Session()
+sess.run(tf.tables_intializer())
+sess.run(iterator.intializer)
+next_batch = iterator.get_next()
+print(sees.run(next_element)) # returns numpy arrays of a single batch
+
 </pre>
