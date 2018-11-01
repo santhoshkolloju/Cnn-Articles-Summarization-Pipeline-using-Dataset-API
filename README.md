@@ -7,9 +7,9 @@ The pipeline build using Dataset API by default is part of tensorflow graph
 What problems tensorflow Dataset API can solve.
 
 1)CPU - GPU problem
-GPU doesnt have any memory all the data preparation happens in CPU.while the GPU finishes trainiing first batch of data it 
-requests the CPU for next batch until CPU prepares the data GPU is idle . to solve this problem we can inturn in background 
-process the data in CPU before GPU finishes the training of a batch.
+GPU doesnt have any memory all the data preparation happens in CPU.while the GPU finishes trainiing first batch of data and  
+requests the CPU for next batch CPU is idle . to solve this problem we can inturn run the data processing as a background 
+process  in CPU before GPU finishes the training a batch of data.
 
 <img src="https://github.com/santhoshkolloju/Cnn-Articles-Summarization-Pipeline-using-Dataset-API/blob/master/Screen%20Shot%202018-11-01%20at%204.57.58%20PM.png"/>
 
